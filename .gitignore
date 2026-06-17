@@ -9,3 +9,6 @@ __pycache__/
 
 # VS Code editor settings folder - personal to your editor, not relevant to the project
 .vscode/
+
+# Claude Code's local working directory - tool state/config, not project source code
+.claude/
