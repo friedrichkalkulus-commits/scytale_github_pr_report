@@ -1,0 +1,11 @@
+# Environment variables file - often contains secrets/API keys, should never be committed
+.env
+
+# Compiled Python bytecode folder - auto-generated, not source code
+__pycache__/
+
+# Individual compiled Python bytecode files - auto-generated, not source code
+*.pyc
+
+# VS Code editor settings folder - personal to your editor, not relevant to the project
+.vscode/
