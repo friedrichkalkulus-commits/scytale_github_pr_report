@@ -1,0 +1,242 @@
+[
+  {
+    "PR_number": 7047,
+    "PR_title": "Bump changelog_master.xml for weekly release 2026.6.5",
+    "Author": "github-actions[bot]",
+    "Merge_date": "2026-06-18T09:53:59Z",
+    "CR_Passed": false,
+    "CHECKS_PASSED": true
+  },
+  {
+    "PR_number": 7044,
+    "PR_title": "Use default Trust manager and fallback to user installed CA",
+    "Author": "TimoPtr",
+    "Merge_date": "2026-06-18T09:15:07Z",
+    "CR_Passed": true,
+    "CHECKS_PASSED": true
+  },
+  {
+    "PR_number": 7045,
+    "PR_title": "Revert \"Preserve WebViewActivity path when switching URLs (#6447)\"",
+    "Author": "TimoPtr",
+    "Merge_date": "2026-06-18T08:15:43Z",
+    "CR_Passed": false,
+    "CHECKS_PASSED": true
+  },
+  {
+    "PR_number": 7038,
+    "PR_title": "[NOT_MERGED_GIT_ISSUE] Use default Trust manager and fallback to user installed CA",
+    "Author": "TimoPtr",
+    "Merge_date": "2026-06-18T06:24:03Z",
+    "CR_Passed": true,
+    "CHECKS_PASSED": false
+  },
+  {
+    "PR_number": 7032,
+    "PR_title": "Use our configured OkHttpClient for connectivity checks",
+    "Author": "jpelgrom",
+    "Merge_date": "2026-06-17T15:35:13Z",
+    "CR_Passed": true,
+    "CHECKS_PASSED": false
+  },
+  {
+    "PR_number": 7039,
+    "PR_title": "Fix FrontendViewModel test",
+    "Author": "TimoPtr",
+    "Merge_date": "2026-06-17T13:53:53Z",
+    "CR_Passed": false,
+    "CHECKS_PASSED": true
+  },
+  {
+    "PR_number": 7001,
+    "PR_title": "Improve back behavior of FrontendScreen",
+    "Author": "TimoPtr",
+    "Merge_date": "2026-06-17T07:41:03Z",
+    "CR_Passed": true,
+    "CHECKS_PASSED": true
+  },
+  {
+    "PR_number": 7003,
+    "PR_title": "Implement always open default dashboard in FrontendScreen",
+    "Author": "TimoPtr",
+    "Merge_date": "2026-06-16T20:50:14Z",
+    "CR_Passed": true,
+    "CHECKS_PASSED": true
+  },
+  {
+    "PR_number": 7013,
+    "PR_title": "Add BluetoothManagerServiceDiskRead violation rules",
+    "Author": "oungsi2000",
+    "Merge_date": "2026-06-16T17:19:28Z",
+    "CR_Passed": false,
+    "CHECKS_PASSED": true
+  },
+  {
+    "PR_number": 7020,
+    "PR_title": "Fix NFC tag approval sheet reachability",
+    "Author": "himu-gupta",
+    "Merge_date": "2026-06-16T06:36:14Z",
+    "CR_Passed": true,
+    "CHECKS_PASSED": true
+  },
+  {
+    "PR_number": 7029,
+    "PR_title": "Update gradle/actions action to v6.2.0",
+    "Author": "renovate[bot]",
+    "Merge_date": "2026-06-16T06:03:22Z",
+    "CR_Passed": false,
+    "CHECKS_PASSED": true
+  },
+  {
+    "PR_number": 7000,
+    "PR_title": "Break zone radius sort ties by distance to zone center",
+    "Author": "TimoPtr",
+    "Merge_date": "2026-06-15T19:45:35Z",
+    "CR_Passed": true,
+    "CHECKS_PASSED": true
+  },
+  {
+    "PR_number": 7008,
+    "PR_title": "Update okhttp monorepo to v5.4.0",
+    "Author": "renovate[bot]",
+    "Merge_date": "2026-06-15T14:58:08Z",
+    "CR_Passed": false,
+    "CHECKS_PASSED": true
+  },
+  {
+    "PR_number": 7022,
+    "PR_title": "Update protobuf monorepo to v4.35.1",
+    "Author": "renovate[bot]",
+    "Merge_date": "2026-06-15T14:57:50Z",
+    "CR_Passed": false,
+    "CHECKS_PASSED": true
+  },
+  {
+    "PR_number": 7026,
+    "PR_title": "Update lokalise/lokalise-pull-action action to v5.2.3",
+    "Author": "renovate[bot]",
+    "Merge_date": "2026-06-15T13:19:11Z",
+    "CR_Passed": false,
+    "CHECKS_PASSED": false
+  },
+  {
+    "PR_number": 7015,
+    "PR_title": "Update sentry.android to v8.43.2",
+    "Author": "renovate[bot]",
+    "Merge_date": "2026-06-15T12:42:30Z",
+    "CR_Passed": false,
+    "CHECKS_PASSED": false
+  },
+  {
+    "PR_number": 6995,
+    "PR_title": "Capture schema/port redirection in ConnectionScreen",
+    "Author": "TimoPtr",
+    "Merge_date": "2026-06-15T12:35:30Z",
+    "CR_Passed": true,
+    "CHECKS_PASSED": false
+  },
+  {
+    "PR_number": 7023,
+    "PR_title": "Lock file maintenance",
+    "Author": "renovate[bot]",
+    "Merge_date": "2026-06-15T12:31:21Z",
+    "CR_Passed": false,
+    "CHECKS_PASSED": false
+  },
+  {
+    "PR_number": 6918,
+    "PR_title": "Refactor Matter/Thread managers to simplify the API and add tests",
+    "Author": "TimoPtr",
+    "Merge_date": "2026-06-15T12:04:44Z",
+    "CR_Passed": true,
+    "CHECKS_PASSED": true
+  },
+  {
+    "PR_number": 7017,
+    "PR_title": "Bump changelog_master.xml for weekly release 2026.6.4",
+    "Author": "github-actions[bot]",
+    "Merge_date": "2026-06-15T12:02:32Z",
+    "CR_Passed": false,
+    "CHECKS_PASSED": true
+  },
+  {
+    "PR_number": 7021,
+    "PR_title": "Update ruby/setup-ruby action to v1.313.0",
+    "Author": "renovate[bot]",
+    "Merge_date": "2026-06-14T21:07:03Z",
+    "CR_Passed": true,
+    "CHECKS_PASSED": true
+  },
+  {
+    "PR_number": 6996,
+    "PR_title": "Intercept URI in FrontendScreen",
+    "Author": "TimoPtr",
+    "Merge_date": "2026-06-14T20:52:22Z",
+    "CR_Passed": true,
+    "CHECKS_PASSED": true
+  },
+  {
+    "PR_number": 7016,
+    "PR_title": "Update coil to v3.5.0",
+    "Author": "renovate[bot]",
+    "Merge_date": "2026-06-14T20:33:09Z",
+    "CR_Passed": true,
+    "CHECKS_PASSED": true
+  },
+  {
+    "PR_number": 7014,
+    "PR_title": "Update gradle/actions action to v6.1.1",
+    "Author": "renovate[bot]",
+    "Merge_date": "2026-06-14T20:28:59Z",
+    "CR_Passed": true,
+    "CHECKS_PASSED": true
+  },
+  {
+    "PR_number": 7005,
+    "PR_title": "Update firebase.bom to v34.14.1",
+    "Author": "renovate[bot]",
+    "Merge_date": "2026-06-12T08:01:18Z",
+    "CR_Passed": true,
+    "CHECKS_PASSED": true
+  },
+  {
+    "PR_number": 6998,
+    "PR_title": "Bump changelog_master.xml for weekly release 2026.6.3",
+    "Author": "github-actions[bot]",
+    "Merge_date": "2026-06-11T08:12:03Z",
+    "CR_Passed": false,
+    "CHECKS_PASSED": true
+  },
+  {
+    "PR_number": 6964,
+    "PR_title": "Introduce BarcodeScanner within FrontendScreen",
+    "Author": "TimoPtr",
+    "Merge_date": "2026-06-11T07:07:07Z",
+    "CR_Passed": true,
+    "CHECKS_PASSED": true
+  },
+  {
+    "PR_number": 6997,
+    "PR_title": "Cleanup changelog after release",
+    "Author": "TimoPtr",
+    "Merge_date": "2026-06-11T07:04:53Z",
+    "CR_Passed": false,
+    "CHECKS_PASSED": false
+  },
+  {
+    "PR_number": 6994,
+    "PR_title": "Forbid external URI to use not exported app components",
+    "Author": "TimoPtr",
+    "Merge_date": "2026-06-11T07:06:32Z",
+    "CR_Passed": false,
+    "CHECKS_PASSED": false
+  },
+  {
+    "PR_number": 6447,
+    "PR_title": "Preserve WebViewActivity path when switching URLs",
+    "Author": "Gifford47",
+    "Merge_date": "2026-06-11T07:05:42Z",
+    "CR_Passed": false,
+    "CHECKS_PASSED": true
+  }
+]
