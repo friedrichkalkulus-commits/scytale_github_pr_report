@@ -14,8 +14,9 @@ Definitions used (see README for rationale and limitations):
                   limitation.
 """
 
-import json
 from pathlib import Path
+
+import utils
 
 
 # GitHub treats "neutral" and "skipped" check-runs as non-blocking outcomes -
@@ -91,14 +92,11 @@ def transform_record(record):
 # --- Main transform ---
 def transform():
     print(f"Reading raw data from {INPUT_FILE} ...")
-    with open(INPUT_FILE, encoding="utf-8") as f:
-        raw_records = json.load(f)
+    raw_records = utils.load_json(INPUT_FILE)
 
     report = [transform_record(r) for r in raw_records]
 
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(report, f, indent=2)
+    utils.save_json(OUTPUT_FILE, report)
 
     print(f"Transformed {len(report)} records -> {OUTPUT_FILE}")
     return report

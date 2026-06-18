@@ -5,13 +5,13 @@ Responsible only for retrieving data and saving it as JSON — no analysis.
 """
 
 import os
-import json
 import time
 from pathlib import Path
 
 import requests
 from dotenv import load_dotenv
 
+import utils
 
 # --- Configuration ---
 load_dotenv()
@@ -91,7 +91,6 @@ def extract():
     prs = fetch_merged_prs(REPO, effective_max)
     print(f"Found {len(prs)} merged PRs. Fetching reviews and checks for each ...")
 
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     records = []
     for pr in prs:
         number = pr["number"]
@@ -116,8 +115,7 @@ def extract():
         records.append(record)
 
         # Save after every PR so progress survives an interruption partway through.
-        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-            json.dump(records, f, indent=2)
+        utils.save_json(OUTPUT_FILE, records)
 
         time.sleep(0.1)                     # small pause to be gentle on the API
 

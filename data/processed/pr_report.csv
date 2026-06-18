@@ -1,0 +1,31 @@
+PR_number,PR_title,Author,Merge_date,CR_Passed,CHECKS_PASSED
+7050,Update EnricoMi/publish-unit-test-result-action action to v2.24.0,renovate[bot],2026-06-18T14:36:14Z,False,True
+7047,Bump changelog_master.xml for weekly release 2026.6.5,github-actions[bot],2026-06-18T09:53:59Z,False,True
+7044,Use default Trust manager and fallback to user installed CA,TimoPtr,2026-06-18T09:15:07Z,True,True
+7045,"Revert ""Preserve WebViewActivity path when switching URLs (#6447)""",TimoPtr,2026-06-18T08:15:43Z,False,True
+7038,[NOT_MERGED_GIT_ISSUE] Use default Trust manager and fallback to user installed CA,TimoPtr,2026-06-18T06:24:03Z,True,False
+7032,Use our configured OkHttpClient for connectivity checks,jpelgrom,2026-06-17T15:35:13Z,True,False
+7039,Fix FrontendViewModel test,TimoPtr,2026-06-17T13:53:53Z,False,True
+7001,Improve back behavior of FrontendScreen,TimoPtr,2026-06-17T07:41:03Z,True,True
+7003,Implement always open default dashboard in FrontendScreen,TimoPtr,2026-06-16T20:50:14Z,True,True
+7013,Add BluetoothManagerServiceDiskRead violation rules,oungsi2000,2026-06-16T17:19:28Z,False,True
+7020,Fix NFC tag approval sheet reachability,himu-gupta,2026-06-16T06:36:14Z,True,True
+7029,Update gradle/actions action to v6.2.0,renovate[bot],2026-06-16T06:03:22Z,False,True
+7000,Break zone radius sort ties by distance to zone center,TimoPtr,2026-06-15T19:45:35Z,True,True
+7008,Update okhttp monorepo to v5.4.0,renovate[bot],2026-06-15T14:58:08Z,False,True
+7022,Update protobuf monorepo to v4.35.1,renovate[bot],2026-06-15T14:57:50Z,False,True
+7026,Update lokalise/lokalise-pull-action action to v5.2.3,renovate[bot],2026-06-15T13:19:11Z,False,False
+7015,Update sentry.android to v8.43.2,renovate[bot],2026-06-15T12:42:30Z,False,False
+6995,Capture schema/port redirection in ConnectionScreen,TimoPtr,2026-06-15T12:35:30Z,True,False
+7023,Lock file maintenance,renovate[bot],2026-06-15T12:31:21Z,False,False
+6918,Refactor Matter/Thread managers to simplify the API and add tests,TimoPtr,2026-06-15T12:04:44Z,True,True
+7017,Bump changelog_master.xml for weekly release 2026.6.4,github-actions[bot],2026-06-15T12:02:32Z,False,True
+7021,Update ruby/setup-ruby action to v1.313.0,renovate[bot],2026-06-14T21:07:03Z,True,True
+6996,Intercept URI in FrontendScreen,TimoPtr,2026-06-14T20:52:22Z,True,True
+7016,Update coil to v3.5.0,renovate[bot],2026-06-14T20:33:09Z,True,True
+7014,Update gradle/actions action to v6.1.1,renovate[bot],2026-06-14T20:28:59Z,True,True
+7005,Update firebase.bom to v34.14.1,renovate[bot],2026-06-12T08:01:18Z,True,True
+6998,Bump changelog_master.xml for weekly release 2026.6.3,github-actions[bot],2026-06-11T08:12:03Z,False,True
+6964,Introduce BarcodeScanner within FrontendScreen,TimoPtr,2026-06-11T07:07:07Z,True,True
+6997,Cleanup changelog after release,TimoPtr,2026-06-11T07:04:53Z,False,False
+6994,Forbid external URI to use not exported app components,TimoPtr,2026-06-11T07:06:32Z,False,False
