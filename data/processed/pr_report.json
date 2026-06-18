@@ -1,5 +1,13 @@
 [
   {
+    "PR_number": 7050,
+    "PR_title": "Update EnricoMi/publish-unit-test-result-action action to v2.24.0",
+    "Author": "renovate[bot]",
+    "Merge_date": "2026-06-18T14:36:14Z",
+    "CR_Passed": false,
+    "CHECKS_PASSED": true
+  },
+  {
     "PR_number": 7047,
     "PR_title": "Bump changelog_master.xml for weekly release 2026.6.5",
     "Author": "github-actions[bot]",
@@ -230,13 +238,5 @@
     "Merge_date": "2026-06-11T07:06:32Z",
     "CR_Passed": false,
     "CHECKS_PASSED": false
-  },
-  {
-    "PR_number": 6447,
-    "PR_title": "Preserve WebViewActivity path when switching URLs",
-    "Author": "Gifford47",
-    "Merge_date": "2026-06-11T07:05:42Z",
-    "CR_Passed": false,
-    "CHECKS_PASSED": true
   }
 ]
