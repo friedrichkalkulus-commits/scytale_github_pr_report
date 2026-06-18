@@ -6,7 +6,6 @@ Responsible only for retrieving data and saving it as JSON — no analysis.
 
 import os
 import time
-from pathlib import Path
 
 import requests
 from dotenv import load_dotenv
@@ -17,10 +16,6 @@ import utils
 load_dotenv()
 TOKEN = os.environ["GITHUB_TOKEN"]
 
-REPO = "home-assistant/android"   # the single repo to analyse (change this one line to switch repos)
-MAX_PRS = 30                      # how many recent merged PRs to fetch
-FETCH_ALL = False                 # if True, ignore MAX_PRS and fetch every merged PR (added later)
-
 API_ROOT = "https://api.github.com"
 HEADERS = {
     "Authorization": f"Bearer {TOKEN}",
@@ -28,10 +23,6 @@ HEADERS = {
     "X-GitHub-Api-Version": "2022-11-28",
     "User-Agent": "scytale-pr-report",
 }
-
-# Where raw output is saved
-OUTPUT_DIR = Path("data/raw")
-OUTPUT_FILE = OUTPUT_DIR / "pull_requests.json"
 
 
 # --- Helpers ---
@@ -85,10 +76,10 @@ def fetch_checks(repo, sha):
 
 
 # --- Main extraction ---
-def extract():
-    effective_max = float("inf") if FETCH_ALL else MAX_PRS
-    print(f"Fetching {'all' if FETCH_ALL else f'up to {MAX_PRS}'} merged PRs from {REPO} ...")
-    prs = fetch_merged_prs(REPO, effective_max)
+def extract(repo, max_prs, fetch_all, output_file):
+    effective_max = float("inf") if fetch_all else max_prs
+    print(f"Fetching {'all' if fetch_all else f'up to {max_prs}'} merged PRs from {repo} ...")
+    prs = fetch_merged_prs(repo, effective_max)
     print(f"Found {len(prs)} merged PRs. Fetching reviews and checks for each ...")
 
     records = []
@@ -106,8 +97,8 @@ def extract():
         }
 
         try:
-            record["reviews"] = fetch_reviews(REPO, number)
-            record["checks"] = fetch_checks(REPO, sha)
+            record["reviews"] = fetch_reviews(repo, number)
+            record["checks"] = fetch_checks(repo, sha)
         except RuntimeError as e:
             record["error"] = str(e)
             print(f"    failed to fetch reviews/checks for PR #{number}: {e}")
@@ -115,13 +106,13 @@ def extract():
         records.append(record)
 
         # Save after every PR so progress survives an interruption partway through.
-        utils.save_json(OUTPUT_FILE, records)
+        utils.save_json(output_file, records)
 
         time.sleep(0.1)                     # small pause to be gentle on the API
 
-    print(f"Saved {len(records)} records to {OUTPUT_FILE}")
+    print(f"Saved {len(records)} records to {output_file}")
     return records
 
 
 if __name__ == "__main__":
-    extract()
+    extract("home-assistant/android", 30, False, "data/raw/pull_requests.json")

@@ -14,8 +14,6 @@ Definitions used (see README for rationale and limitations):
                   limitation.
 """
 
-from pathlib import Path
-
 import utils
 
 
@@ -24,12 +22,6 @@ import utils
 # pass/fail by design. Only these conclusions count as passing; anything else
 # (failure, timed_out, action_required, cancelled, stale, etc.) does not.
 PASSING_CONCLUSIONS = {"success", "neutral", "skipped"}
-
-
-# --- File locations ---
-INPUT_FILE = Path("data/raw/pull_requests.json")
-OUTPUT_DIR = Path("data/processed")
-OUTPUT_FILE = OUTPUT_DIR / "pr_report.json"
 
 
 # --- The two judgements ---
@@ -90,17 +82,17 @@ def transform_record(record):
 
 
 # --- Main transform ---
-def transform():
-    print(f"Reading raw data from {INPUT_FILE} ...")
-    raw_records = utils.load_json(INPUT_FILE)
+def transform(input_file, output_file):
+    print(f"Reading raw data from {input_file} ...")
+    raw_records = utils.load_json(input_file)
 
     report = [transform_record(r) for r in raw_records]
 
-    utils.save_json(OUTPUT_FILE, report)
+    utils.save_json(output_file, report)
 
-    print(f"Transformed {len(report)} records -> {OUTPUT_FILE}")
+    print(f"Transformed {len(report)} records -> {output_file}")
     return report
 
 
 if __name__ == "__main__":
-    transform()
+    transform("data/raw/pull_requests.json", "data/processed/pr_report.json")
