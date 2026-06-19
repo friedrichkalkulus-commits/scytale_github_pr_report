@@ -115,4 +115,4 @@ def extract(repo, max_prs, fetch_all, output_file):
 
 
 if __name__ == "__main__":
-    extract("home-assistant/android", 30, False, "data/raw/pull_requests.json")
+    extract("home-assistant/core", 30, False, "data/raw/pull_requests.json")

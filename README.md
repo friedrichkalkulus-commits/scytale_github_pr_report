@@ -59,7 +59,7 @@ Run the whole pipeline with:
 
 That's it. It fetches, analyses, and writes the report in one go.
 
-All the settings live at the top of `main.py`, so to change what it does you only edit that one file:
+All the main settings live at the top of `main.py`, so to change what it does you only edit that one file:
 
 | Setting | What it does |
 |---|---|
@@ -111,7 +111,10 @@ It's tempting to read the `core` vs `android` difference as "the more critical r
     │   └── jira_integration_prompt.md # prompt to reproduce this for JIRA
     ├── data/
     │   ├── raw/              # raw fetched data
+    |   |   └── pull_requests.json
     │   └── processed/        # the report (JSON + CSV)
+    |   │   ├── pr_report.csv
+    |   |   └── pr_report.json
     ├── .gitignore
     └── README.md
 

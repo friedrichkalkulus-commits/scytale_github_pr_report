@@ -15,7 +15,7 @@ import utils
 
 REPO = "home-assistant/core"   # the single repo to analyse (change this one line to switch repos)
 MAX_PRS = 30                      # how many recent merged PRs to fetch
-FETCH_ALL = False                # if True, ignore MAX_PRS and fetch every merged PR
+FETCH_ALL = False                 # if True, ignore MAX_PRS and fetch every merged PR
 
 RAW_FILE = "data/raw/pull_requests.json"
 PROCESSED_FILE = "data/processed/pr_report.json"
