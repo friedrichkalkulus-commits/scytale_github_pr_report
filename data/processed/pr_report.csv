@@ -1,31 +1,31 @@
 PR_number,PR_title,Author,Merge_date,CR_Passed,CHECKS_PASSED
-7050,Update EnricoMi/publish-unit-test-result-action action to v2.24.0,renovate[bot],2026-06-18T14:36:14Z,False,True
-7047,Bump changelog_master.xml for weekly release 2026.6.5,github-actions[bot],2026-06-18T09:53:59Z,False,True
-7044,Use default Trust manager and fallback to user installed CA,TimoPtr,2026-06-18T09:15:07Z,True,True
-7045,"Revert ""Preserve WebViewActivity path when switching URLs (#6447)""",TimoPtr,2026-06-18T08:15:43Z,False,True
-7038,[NOT_MERGED_GIT_ISSUE] Use default Trust manager and fallback to user installed CA,TimoPtr,2026-06-18T06:24:03Z,True,False
-7032,Use our configured OkHttpClient for connectivity checks,jpelgrom,2026-06-17T15:35:13Z,True,False
-7039,Fix FrontendViewModel test,TimoPtr,2026-06-17T13:53:53Z,False,True
-7001,Improve back behavior of FrontendScreen,TimoPtr,2026-06-17T07:41:03Z,True,True
-7003,Implement always open default dashboard in FrontendScreen,TimoPtr,2026-06-16T20:50:14Z,True,True
-7013,Add BluetoothManagerServiceDiskRead violation rules,oungsi2000,2026-06-16T17:19:28Z,False,True
-7020,Fix NFC tag approval sheet reachability,himu-gupta,2026-06-16T06:36:14Z,True,True
-7029,Update gradle/actions action to v6.2.0,renovate[bot],2026-06-16T06:03:22Z,False,True
-7000,Break zone radius sort ties by distance to zone center,TimoPtr,2026-06-15T19:45:35Z,True,True
-7008,Update okhttp monorepo to v5.4.0,renovate[bot],2026-06-15T14:58:08Z,False,True
-7022,Update protobuf monorepo to v4.35.1,renovate[bot],2026-06-15T14:57:50Z,False,True
-7026,Update lokalise/lokalise-pull-action action to v5.2.3,renovate[bot],2026-06-15T13:19:11Z,False,False
-7015,Update sentry.android to v8.43.2,renovate[bot],2026-06-15T12:42:30Z,False,False
-6995,Capture schema/port redirection in ConnectionScreen,TimoPtr,2026-06-15T12:35:30Z,True,False
-7023,Lock file maintenance,renovate[bot],2026-06-15T12:31:21Z,False,False
-6918,Refactor Matter/Thread managers to simplify the API and add tests,TimoPtr,2026-06-15T12:04:44Z,True,True
-7017,Bump changelog_master.xml for weekly release 2026.6.4,github-actions[bot],2026-06-15T12:02:32Z,False,True
-7021,Update ruby/setup-ruby action to v1.313.0,renovate[bot],2026-06-14T21:07:03Z,True,True
-6996,Intercept URI in FrontendScreen,TimoPtr,2026-06-14T20:52:22Z,True,True
-7016,Update coil to v3.5.0,renovate[bot],2026-06-14T20:33:09Z,True,True
-7014,Update gradle/actions action to v6.1.1,renovate[bot],2026-06-14T20:28:59Z,True,True
-7005,Update firebase.bom to v34.14.1,renovate[bot],2026-06-12T08:01:18Z,True,True
-6998,Bump changelog_master.xml for weekly release 2026.6.3,github-actions[bot],2026-06-11T08:12:03Z,False,True
-6964,Introduce BarcodeScanner within FrontendScreen,TimoPtr,2026-06-11T07:07:07Z,True,True
-6997,Cleanup changelog after release,TimoPtr,2026-06-11T07:04:53Z,False,False
-6994,Forbid external URI to use not exported app components,TimoPtr,2026-06-11T07:06:32Z,False,False
+174175,Raise ConfigEntryNotReady on Ollama connection errors,balloob,2026-06-18T06:19:45Z,True,True
+174138,Fix stale routine entities removal for Alexa Devices,chemelli74,2026-06-18T06:20:57Z,True,True
+173807,Add ventilation state select to Duco box nodes,ronaldvdmeer,2026-06-18T07:10:41Z,False,True
+174104,Suppress SMTPException from quit() during SMTP notify retry,frenck,2026-06-18T07:25:23Z,True,False
+174177,Fix Duco error placeholders and test typing,ronaldvdmeer,2026-06-18T07:27:06Z,True,True
+174160,Fix summary for aw check requirements,edenhaus,2026-06-18T07:31:59Z,True,True
+174173,Add radio frequency entity name translation,balloob,2026-06-18T07:34:03Z,True,True
+173259,Open repair issue when deprecated trigger behavior is used,emontnemery,2026-06-18T07:36:02Z,True,True
+172407,Improve tests of helpers.trigger.extract_devices/entities,emontnemery,2026-06-18T07:36:55Z,True,True
+174167,Cast SwitchBot Cloud device sw_version to string,gaborbernat,2026-06-18T07:38:46Z,True,True
+174233,Wrap cloud OAuth2 token refresh errors into proper exception types,frenck,2026-06-19T07:18:24Z,True,True
+174246,Update ruff to v0.15.17,renovate[bot],2026-06-19T07:17:35Z,True,True
+173954,Add Teslemetry command quota sensor,Bre77,2026-06-19T06:49:57Z,True,True
+174219,MELCloud Home add constant in diagnostics,erwindouna,2026-06-19T06:41:48Z,True,True
+174232,Skip fill sensor for Rituals diffusers without fill data,frenck,2026-06-19T06:39:35Z,True,True
+174176,Document uv upgrade workaround in AGENTS.md,balloob,2026-06-18T05:03:35Z,True,True
+173679,Add network MAC connection to AsusWRT router,jasonjhofmann,2026-06-18T05:09:13Z,True,True
+174247,Update infrared-protocols to 6.1.0,renovate[bot],2026-06-19T04:56:31Z,True,True
+174241,Bump yoto-api to 4.3.1,piitaya,2026-06-19T04:54:42Z,True,True
+174216,Use default cosign-release for pinned cosign-installer version,justanotherariel,2026-06-18T17:56:52Z,True,True
+173134,Add API to query radio frequency information,balloob,2026-06-18T02:38:56Z,True,True
+174158,Bump aioamazondevices to 14.1.3,chemelli74,2026-06-17T21:46:50Z,True,True
+174144,Docstring and comment grammar etc fixes,scop,2026-06-17T21:06:10Z,True,True
+174135,Refactor Raspberry Pi Power Checker integration,tr4nt0r,2026-06-17T16:33:26Z,True,True
+172929,Add Raspberry Pi Firmware update entity,sairon,2026-06-17T21:36:01Z,True,True
+174124,Remove radio firmware version from device info in homeassistant_yellow,sairon,2026-06-17T21:36:09Z,True,True
+174147,Fix tests in Onboarding integration,tr4nt0r,2026-06-17T20:11:55Z,True,True
+173634,Add leak alerts to Droplet integration,sarahseidman,2026-06-18T20:00:55Z,True,True
+172584,Rewrite Nexia integration platform tests with a mock Nexia library,jrhillery,2026-06-18T19:33:24Z,True,True
+173909,Add ambient color selects to Yoto,piitaya,2026-06-18T19:54:13Z,True,True
