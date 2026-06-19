@@ -87,7 +87,7 @@ The split is deliberate. The GitHub-specific parts (fetching, judging) are separ
 - **`CR_Passed`** is `True` if at least one review on the PR has the state `APPROVED` (any reviewer counts, including bots).
 - **`CHECKS_PASSED`** is `True` only if every check that ran passed. GitHub reports checks through two systems (modern "check-runs" and older "combined status"), so the tool checks both. Some check outcomes, such as `neutral` and `skipped`, are treated as passing, since GitHub itself treats them as non-blocking. Outcomes like `failure` or `cancelled` are not.
 
-One deliberate choice worth highlighting: a PR is only marked `True` if the control was actually satisfied. A PR merged with **no review**, or with **no checks recorded**, comes out `False`, not as a separate "unknown". From a compliance angle, the point is that a change merged without review or checks is exactly the kind of thing you'd want flagged for a closer look, not jus passed over.
+One deliberate choice worth highlighting: a PR is only marked `True` if the control was actually satisfied. A PR merged with **no review**, or with **no checks recorded**, comes out `False`, not as a separate "unknown". From a compliance angle, the point is that a change merged without review or checks is exactly the kind of thing you'd want flagged for a closer look, not just passed over.
 
 ## A note on what the reports showed
 
